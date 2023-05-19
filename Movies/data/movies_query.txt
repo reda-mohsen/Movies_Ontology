@@ -1,0 +1,28 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX movies: <http://www.semanticweb.org/redar/ontologies/2023/4/Movies/>
+
+SELECT DISTINCT ?title ?year ?country ?genre ?actor ?director ?writer ?company
+WHERE {
+  ?movie rdf:type movies:Movie ;
+         movies:title ?title ;
+         movies:year ?year ;
+         movies:country ?country ;
+         movies:HasGenre ?genreResource ;
+         movies:HasActor ?actorResource ;
+         movies:HasDirector ?directorResource ;
+         movies:HasWriter ?writerResource ;
+         movies:HasProductionCompany ?productionCompany.
+      
+  
+  ?genreResource movies:genre ?genre .
+  
+  ?actorResource movies:name ?actor .
+  
+  ?directorResource movies:name ?director .
+  
+  ?writerResource movies:name ?writer .
+  
+  ?productionCompany movies:pcname ?company.
+}

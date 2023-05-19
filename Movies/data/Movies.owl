@@ -1,0 +1,750 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/"
+     xml:base="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-3="http://www.semanticweb.org/redar/ontologies/2023/4/untitled-ontology-3#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies">
+        <rdfs:comment>An ontology about movies.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/HasActor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/HasActor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/isActorOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Actor"/>
+        <rdfs:comment>Indicates that a movie has an actor.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/HasDirector -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/HasDirector">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/isDirectorOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Director"/>
+        <rdfs:comment>Indicates that a movie has a director</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/HasGenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/HasGenre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/isGenreOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Genre"/>
+        <rdfs:comment>Indicates that a movie has a genre.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/HasProductionCompany -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/HasProductionCompany">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/isProductionCompanyOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/ProductionCompany"/>
+        <rdfs:comment>Indicates that a movie is produced by a production company.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/HasWriter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/HasWriter">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/isWriterOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Writer"/>
+        <rdfs:comment>Indicates that a movie has a writer.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/isActorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/isActorOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Actor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Movie"/>
+        <rdfs:comment>Indicates that an actor has acted in a movie.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/isDirectorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/isDirectorOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Director"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Movie"/>
+        <rdfs:comment>Indicates that a movie is directed by a director.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/isGenreOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/isGenreOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Genre"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Movie"/>
+        <rdfs:comment>Indicates that a genre is genre of a movie.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/isProductionCompanyOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/isProductionCompanyOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/ProductionCompany"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Movie"/>
+        <rdfs:comment>Indicates that a production company produce a movie.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/isWriterOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/isWriterOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Writer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Movie"/>
+        <rdfs:comment>Indicates that a movie is written by a writer</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/age">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Person"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/age"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Indicates the age of a person.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/country -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/country">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Indicates the country of a movie.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/gender">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Person"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/gender"/>
+                        <owl:hasValue>female</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/gender"/>
+                        <owl:hasValue>male</owl:hasValue>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Indicates the gender of a person.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/genre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/genre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Genre"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Indicates the genre of a movie.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/language -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/language">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Indicates the language of a movie.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Indicates the name of a person.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/nationality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/nationality">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Indicates the nationality of a person.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/pcname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/pcname">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/ProductionCompany"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Indicates the name of a production company.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/title">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Indicates the title of a movie.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/year">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Movie"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/year"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minExclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2023</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Indicates the year of release of a movie.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Actor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/isActorOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Movie"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Individuals who play a role in a movie.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/isDirectorOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Movie"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Individuals who direct a movie.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Genre">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/isGenreOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Movie"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Movie"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/ProductionCompany"/>
+        <rdfs:comment>Categories or styles of movies, such as action, comedy, drama, etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Movie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Movie">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/HasActor"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Actor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/HasDirector"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Director"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/HasGenre"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Genre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/HasProductionCompany"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/ProductionCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/HasWriter"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Writer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/ProductionCompany"/>
+        <rdfs:comment>A film or motion picture.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Person">
+        <rdfs:comment>Individuals who are involved in the movie industry but not necessarily in a specific role.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/ProductionCompany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/ProductionCompany">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/isProductionCompanyOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Movie"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Companies or organizations that produce movies.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Writer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Writer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/isWriterOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Movie"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Individuals who write a script for a movie.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/ABandApart -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/ABandApart">
+        <rdf:type rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/ProductionCompany"/>
+        <isProductionCompanyOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/KillBillMovie"/>
+        <isProductionCompanyOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/PulpFictionMovie"/>
+        <pcname>A Band Apart</pcname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Action -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Action">
+        <rdf:type rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Genre"/>
+        <isGenreOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/KillBillMovie"/>
+        <genre>Action</genre>
+        <rdfs:comment>An instance of the Genre class that represents the Action genre.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/ChristopherNolan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/ChristopherNolan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Director"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Writer"/>
+        <isDirectorOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/InceptionMovie"/>
+        <isWriterOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/InceptionMovie"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">51</age>
+        <gender>Male</gender>
+        <name>Christopher Nolan</name>
+        <nationality>British-American</nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Crime -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Crime">
+        <rdf:type rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Genre"/>
+        <isGenreOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/JokerMovie"/>
+        <isGenreOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/KillBillMovie"/>
+        <isGenreOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/PulpFictionMovie"/>
+        <genre>Crime</genre>
+        <rdfs:comment>An instance of the Genre class that represents the Crime genre.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Drama -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Drama">
+        <rdf:type rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Genre"/>
+        <isGenreOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/JokerMovie"/>
+        <genre>Drama</genre>
+        <rdfs:comment>An instance of the Genre class that represents the Drama genre.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/InceptionMovie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/InceptionMovie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Movie"/>
+        <HasActor rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/LeonardoDiCaprio"/>
+        <HasDirector rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/ChristopherNolan"/>
+        <HasGenre rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/ScienceFiction"/>
+        <HasGenre rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Thriller"/>
+        <HasProductionCompany rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/WarnerBros"/>
+        <HasWriter rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/ChristopherNolan"/>
+        <country>USA</country>
+        <language>English</language>
+        <title>Inception</title>
+        <year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/JoaquinPhoenix -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/JoaquinPhoenix">
+        <rdf:type rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Person"/>
+        <isActorOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/JokerMovie"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">47</age>
+        <gender>Male</gender>
+        <name>Joaquin Phoenix</name>
+        <nationality>American</nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/JohnTravolta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/JohnTravolta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Person"/>
+        <isActorOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/PulpFictionMovie"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">59</age>
+        <gender>Male</gender>
+        <name>John Travolta</name>
+        <nationality>American</nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/JokerMovie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/JokerMovie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Movie"/>
+        <HasActor rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/JoaquinPhoenix"/>
+        <HasDirector rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/ToddPhillips"/>
+        <HasGenre rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Crime"/>
+        <HasGenre rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Drama"/>
+        <HasProductionCompany rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/WarnerBros"/>
+        <HasWriter rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/ToddPhillips"/>
+        <country>USA</country>
+        <language>English</language>
+        <title>Joker</title>
+        <year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/KillBillMovie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/KillBillMovie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Movie"/>
+        <HasDirector rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/QuentinTarantino"/>
+        <HasGenre rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Action"/>
+        <HasGenre rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Crime"/>
+        <HasGenre rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Thriller"/>
+        <HasWriter rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/QuentinTarantino"/>
+        <HasWriter rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/UmaThurman"/>
+        <country>USA</country>
+        <language>English</language>
+        <title>Kill Bill (volume 1)</title>
+        <year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2003</year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/LeonardoDiCaprio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/LeonardoDiCaprio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Person"/>
+        <isActorOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/InceptionMovie"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">47</age>
+        <gender>Male</gender>
+        <name>Leonardo DiCaprio</name>
+        <nationality>American</nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/MiramaxFilms -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/MiramaxFilms">
+        <rdf:type rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/ProductionCompany"/>
+        <isProductionCompanyOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/PulpFictionMovie"/>
+        <pcname>Miramax Films</pcname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/PulpFictionMovie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/PulpFictionMovie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Movie"/>
+        <HasActor rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/JohnTravolta"/>
+        <HasActor rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/UmaThurman"/>
+        <HasDirector rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/QuentinTarantino"/>
+        <HasGenre rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Crime"/>
+        <HasGenre rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Thriller"/>
+        <HasProductionCompany rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/ABandApart"/>
+        <HasProductionCompany rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/MiramaxFilms"/>
+        <HasWriter rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/QuentinTarantino"/>
+        <country>USA</country>
+        <language>English</language>
+        <title>Pulp Fiction</title>
+        <year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/QuentinTarantino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/QuentinTarantino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Director"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Writer"/>
+        <isActorOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/KillBillMovie"/>
+        <isDirectorOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/KillBillMovie"/>
+        <isDirectorOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/PulpFictionMovie"/>
+        <isWriterOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/KillBillMovie"/>
+        <isWriterOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/PulpFictionMovie"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53</age>
+        <gender>Male</gender>
+        <name>Quentin Tarantino</name>
+        <nationality>American</nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/ScienceFiction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/ScienceFiction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Genre"/>
+        <isGenreOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/InceptionMovie"/>
+        <genre>Science Fiction</genre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Thriller -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Thriller">
+        <rdf:type rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Genre"/>
+        <isGenreOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/InceptionMovie"/>
+        <isGenreOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/KillBillMovie"/>
+        <isGenreOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/PulpFictionMovie"/>
+        <genre>Thriller</genre>
+        <rdfs:comment>An instance of the Genre class that represents the Thriller genre.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/ToddPhillips -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/ToddPhillips">
+        <rdf:type rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Director"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Writer"/>
+        <isDirectorOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/JokerMovie"/>
+        <isWriterOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/JokerMovie"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">51</age>
+        <gender>Male</gender>
+        <name>Todd Phillips</name>
+        <nationality>American</nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/UmaThurman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/UmaThurman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/Writer"/>
+        <isActorOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/PulpFictionMovie"/>
+        <isWriterOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/KillBillMovie"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</age>
+        <gender>Female</gender>
+        <name>Uma Thurman</name>
+        <nationality>American</nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/redar/ontologies/2023/4/Movies/WarnerBros -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/WarnerBros">
+        <rdf:type rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/ProductionCompany"/>
+        <isProductionCompanyOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/InceptionMovie"/>
+        <isProductionCompanyOf rdf:resource="http://www.semanticweb.org/redar/ontologies/2023/4/Movies/JokerMovie"/>
+        <pcname>Warner Bros</pcname>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
