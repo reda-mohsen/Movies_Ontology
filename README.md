@@ -4,7 +4,7 @@
 ## Classes
 The ontology of movies defines the following classes:<br/>
 <img src = "assets/Picture1.png">
-<br/>
+
 * Actor
 * Director
 * Writer
@@ -13,7 +13,7 @@ The ontology of movies defines the following classes:<br/>
 * Genre
 * Production Company
 
-<br/>
+
 
 
 An Actor is an individual who plays a role in a movie.<br/>
