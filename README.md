@@ -11,7 +11,9 @@ The ontology of movies defines the following classes:<br/>
 * Person
 * Movie
 * Genre
-* Production Company<br/>
+* Production Company
+
+<br/>
 
 
 An Actor is an individual who plays a role in a movie.<br/>
@@ -69,11 +71,16 @@ The ontology of movies defines the following constraints:<br/>
 16. (gender value "female") or (gender value "male").
 17. age some xsd:integer [> 0].
 <br/>
-## Instances Created:<br/>
- * Movie Instances. <br/> <img src = "assets/Picture3.png"> <br/>
- * Person Instances.<br/> <img src = "assets/Picture4.png"> <br/>
- * Genre Instances.<br/> <img src = "assets/Picture5.png"> <br/>
- * Production Company Instances.<br/> <img src = "assets/Picture6.png"> <br/>
+## Instances Created:
+<br/>
+ * Movie Instances. 
+<br/> <img src = "assets/Picture3.png"> <br/>
+ * Person Instances.
+<br/> <img src = "assets/Picture4.png"> <br/>
+ * Genre Instances.
+<br/> <img src = "assets/Picture5.png"> <br/>
+ * Production Company Instances.
+<br/> <img src = "assets/Picture6.png"> <br/>
 
 ## Output of the project:
 ### GUI Output:
