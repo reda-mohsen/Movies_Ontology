@@ -46,15 +46,15 @@ The ontology of movies defines the following data properties:<br/>
 The ontology of movies defines the following object properties:
 <br/>
 
-HasActor: A movie has an actor.
-HasDirector: A movie has a director.
-HasWriter: A movie has a writer.
-isActorOf: An actor has acted in a movie.
-isDirectorOf: A movie is directed by a director.
-isWriterOf: A movie is written by a writer.
-HasGenre: A movie has a genre.
-isGenreOf: A genre belongs to a movie.
-HasProductionCompany: A movie is produced by a production company.
+HasActor: A movie has an actor.<br/>
+HasDirector: A movie has a director.<br/>
+HasWriter: A movie has a writer.<br/>
+isActorOf: An actor has acted in a movie.<br/>
+isDirectorOf: A movie is directed by a director.<br/>
+isWriterOf: A movie is written by a writer.<br/>
+HasGenre: A movie has a genre.<br/>
+isGenreOf: A genre belongs to a movie.<br/>
+HasProductionCompany: A movie is produced by a production company.<br/>
 isProductionCompanyOf: A production company produces a movie.
 ## Constraints
 The ontology of movies defines the following constraints:<br/>
