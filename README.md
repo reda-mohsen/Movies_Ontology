@@ -42,10 +42,9 @@ The ontology of movies defines the following data properties:<br/>
 
 ## Object Properties:
 
-<br/>
+
 The ontology of movies defines the following object properties:
 <br/>
-
 HasActor: A movie has an actor.<br/>
 HasDirector: A movie has a director.<br/>
 HasWriter: A movie has a writer.<br/>
