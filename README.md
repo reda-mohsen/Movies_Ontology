@@ -22,8 +22,10 @@ A Writer is an individual who writes a script for a movie.<br/>
 A Person is an individual who is involved in the movie industry but not necessarily in a specific role.<br/>
 A Movie is a film or motion picture.<br/>
 A Genre is a category or style of movies, such as action, comedy, drama, etc.<br/>
-A ProductionCompany is a company or organization that produces movies.<br/>
+A ProductionCompany is a company or organization that produces movies.
+
 ## Data Properties
+
 The ontology of movies defines the following data properties:<br/>
 
 * age: The age of a person.
@@ -37,8 +39,12 @@ The ontology of movies defines the following data properties:<br/>
 * year: The year of release of a movie.
 * genre: The genre of a movie.
 <br/>
-## Object Properties
-The ontology of movies defines the following object properties:<br/>
+
+## Object Properties:
+
+<br/>
+The ontology of movies defines the following object properties:
+<br/>
 
 HasActor: A movie has an actor.
 HasDirector: A movie has a director.
