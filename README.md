@@ -69,16 +69,16 @@ The ontology of movies defines the following constraints:<br/>
 16. (gender value "female") or (gender value "male").
 17. age some xsd:integer [> 0].
 <br/>
-## Instances Created:
-1. Movie Instances. <br/> <img src = "assets/Picture3.png"> <br/>
-2. Person Instances.<br/> <img src = "assets/Picture4.png"> <br/>
-4. Genre Instances.<br/> <img src = "assets/Picture5.png"> <br/>
-5. Production Company Instances.<br/> <img src = "assets/Picture6.png"> <br/>
+## Instances Created:<br/>
+ * Movie Instances. <br/> <img src = "assets/Picture3.png"> <br/>
+ * Person Instances.<br/> <img src = "assets/Picture4.png"> <br/>
+ * Genre Instances.<br/> <img src = "assets/Picture5.png"> <br/>
+ * Production Company Instances.<br/> <img src = "assets/Picture6.png"> <br/>
 
 ## Output of the project:
 ### GUI Output:
-<img src="assets/Picture9"><br/>
-<img src="assets/Picture10"><br/>
+<img src="assets/Picture9.png"><br/>
+<img src="assets/Picture10.png"><br/>
 
 ## Team (2) Members:
 1. Reda Mohsen Reda 18P5141
